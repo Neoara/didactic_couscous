@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1><%=email%></h1>
-    
-    <% for(let i = 0; i < adresses.length; i++){%>
-        <% if(adresses[i].length < 10){ %>
-        <div><%= adresses[i] %></div>
-        <% } %>
-    <% } %>
+    <%- include("partials/header.ejs") %>
+
 </body>
 </html>
